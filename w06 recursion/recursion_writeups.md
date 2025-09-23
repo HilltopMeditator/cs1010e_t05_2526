@@ -95,7 +95,8 @@ def get_nums_from_string(s):
     return output
 ```
 
-Notice also how it is completely readable (English-interpretable) despite being written fully in Python!\
+Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
+
 (barring the comment regarding under-the hood ASCII stuff)
 
 </div>
@@ -132,35 +133,34 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
 
 ### Dark arts
 
-<details markdown="1"> 
+<details> 
     <summary><i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
-    <div class="details-box">
+<div class="details-box" markdown="1">
 
-    Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:
+Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:
 
-    ```python
-    max_subsequence_sum(seq):
-        return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
-    ```
+```python
+max_subsequence_sum(seq):
+    return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
+```
 
-    <p>
-    ... and the same thing with proper linebreaks, comments, and variable names!
-    </p>
-    ```python
-    def max_subsequence_sum(seq):
-        return max( ## Return max of...
-            map( ## ...sums of subsequences...
-                lambda subseq: sum(subseq),
-                (
-                    seq[start:stop] ## ...for every possible [start:stop] pair.
-                    for start in range(len(seq))
-                    for stop in range(start+1, len(seq)+1)
-                )   # ^ Note that range() is half-open-bounds, ie: [start,stop)
-            )
+... and the same thing with proper linebreaks, comments, and variable names!
+
+```python
+def max_subsequence_sum(seq):
+    return max( ## Return max of...
+        map( ## ...sums of subsequences...
+            lambda subseq: sum(subseq),
+            (
+                seq[start:stop] ## ...for every possible [start:stop] pair.
+                for start in range(len(seq))
+                for stop in range(start+1, len(seq)+1)
+            )   # ^ Note that range() is half-open-bounds, ie: [start,stop)
         )
-    ```
+    )
+```
 
-    </div>
+</div>
 </details>
 
 ## Reimplementing tuple slicing
