@@ -77,30 +77,28 @@ def get_nums_from_string(s):
 
 ### Black Magic
 
-<details markdown="1"> 
+<details>
     <summary><i>There's a very clean alternate solution here....</i></summary>
-    <div class="details-box">
+<div class="details-box" markdown="1">
 
-    <p>As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.</p>
+As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.
 
-    ```python
-    def get_nums_from_string(s):
+```python
+def get_nums_from_string(s):
 
-        def isNumber(character):
-            ## Refers to the ASCII table: 
-            ## Checks if a character is between 0 to 9 (inclusive)
-            return ord('0') <= ord(character) <= ord('9') 
+    def isNumber(character):
+        ## Refers to the ASCII table: 
+        ## Checks if a character is between 0 to 9 (inclusive)
+        return ord('0') <= ord(character) <= ord('9') 
 
-        output = tuple(filter(isNumber, s))
-        return output
-    ```
+    output = tuple(filter(isNumber, s))
+    return output
+```
 
-    <p>Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
-    <br>
-    (barring the comment regarding under-the hood ASCII stuff)
-    </p>
+Notice also how it is completely readable (English-interpretable) despite being written fully in Python!\
+(barring the comment regarding under-the hood ASCII stuff)
 
-    </div>
+</div>
 </details>
 
 ## subtaskD (Maximum subsequence sum)
