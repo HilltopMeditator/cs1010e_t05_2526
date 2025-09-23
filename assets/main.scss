@@ -32,11 +32,12 @@ details {
 
 details summary {
   cursor: pointer;
+  font-weight: normal;
   padding: 0.3em 0.5em;
 }
 
 details[open] .details-box {
-  background-color: #eef; /* subtle highlight when expanded */
+  background-color: rgb(214, 214, 214); /* subtle highlight when expanded */
 }
 
 .details-box {
@@ -44,5 +45,5 @@ details[open] .details-box {
   margin-top: 0.5em;
   border: 1px solid #ccc;
   border-radius: 6px;
-  background-color: #f9f9f9;
+  background-color: rgb(214, 214, 214);
 }

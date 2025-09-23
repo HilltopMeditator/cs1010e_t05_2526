@@ -9,8 +9,7 @@ title: W06 - Recursion Question solutions
 
 ## Tribonacci
 
-Straightforward and simple:\
-(Practical tip: clarify with the examiner about what constitutes a Base Case when the question phrasing is unclear.)
+Straightforward and simple:
 
 ```python
 def tribonacci(n):
@@ -28,6 +27,8 @@ def tribonacci(n):
 ```
 
 ![flowchart final](image-2.png)
+
+(Practical tip: clarify with the examiner about what constitutes a Base Case when the question phrasing is unclear.)
 
 ## String Filtering
 
@@ -96,7 +97,7 @@ def get_nums_from_string(s):
 ```
 
 Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
-
+<br>
 (barring the comment regarding under-the hood ASCII stuff)
 
 </div>
@@ -193,6 +194,10 @@ Owing to the difficulty of implementing this in pure recursion, the solution is 
 
 We will also start off with a more recursion-friendly re-phrasing _(pun not intended)_ of the requirements.
 
+<div class="details-box" markdown="1">
+
+Starting with this...
+
 > Permute (without replacement) over all elements in the sequence
 
 ...rephrase this to...
@@ -208,13 +213,13 @@ See a recursive part yet? I'll make it clearer:
 ... then take out another element...\
 (From this point on, each possible way to take out _n-1_ elements is itself a permutation.)
 
+</div>
+
 Some final polishing before this can be fully ported to Python:
 
-> A n-length permutation involves:\
-Taking out an element, and attaching (prepend) it to a "n-1"-length-permutation of the rest of the elements.\
-Hence all n-length permutations can be found by doing the same for all elements for all "n-1"-length-permutations.
-
-This will be the core idea.
+> A n-length permutation involves taking out an element, and attaching (prepend) it to a "n-1"-length-permutation of the rest of the elements.\
+\
+All n-length permutations can be found by repeating the above for all elements for all "n-1"-length-permutations.
 
 ```python
 def permute(arr, n):
