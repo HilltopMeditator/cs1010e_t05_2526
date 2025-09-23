@@ -252,4 +252,4 @@ def permute(arr, n):
 
 _Footnote 1: For the keen eyed student, do try to not be confused by the way I mentioned "set" in comments. The "set" `{...}` is a data structure that I think deserves a separate lecture to cover. Do look out for it in future lessons!_
 
-_Footnote 2: Usually, you'll be tested on raw implementation and have no access to external packages.. However, if you're looking to build something useful, there's always a Python package out there to do this: https://docs.python.org/3/library/itertools.html#itertools.permutations_
+_Footnote 2: Usually, you'll be tested on raw implementation and have no access to external packages.. However, if you're looking to build something useful, there's always a [Python package](https://docs.python.org/3/library/itertools.html#itertools.permutations) out there to do this._
