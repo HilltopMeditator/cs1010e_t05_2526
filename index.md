@@ -1,6 +1,6 @@
 ---
 layout: default
-title CS1010E T05
+title: CS1010E T05
 ---
 # AY25/26 CS1010E T05
 

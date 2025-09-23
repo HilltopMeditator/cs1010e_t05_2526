@@ -1,0 +1,6 @@
+img {
+  display: block; /* Make the image a block-level element */
+  margin: 0 auto; /* Center horizontally by setting left and right margins to auto */
+  width: 300px; /* Set a constant width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
