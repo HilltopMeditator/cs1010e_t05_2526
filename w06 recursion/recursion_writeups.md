@@ -1,8 +1,7 @@
 ---
 layout: default
-title: T05 Recursion Writeups
+title: W06 - Recursion Question solutions
 ---
-# W06 - Recursion Question solutions
 
 ## Tribonacci
 
