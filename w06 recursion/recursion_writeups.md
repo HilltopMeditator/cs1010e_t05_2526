@@ -80,11 +80,11 @@ def get_nums_from_string(s):
 <details> 
     <summary><i>There's a very clean alternate solution here....</i></summary>
 
----
+<hr>
 
-As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.
+<p>As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.</p>
 
-```python
+<code class="language-python">
 def get_nums_from_string(s):
 
     def isNumber(character):
@@ -94,13 +94,14 @@ def get_nums_from_string(s):
 
     output = tuple(filter(isNumber, s))
     return output
-```
+</code>
 
-Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
-
+<p>Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
+<br>
 (barring the comment regarding under-the hood ASCII stuff)
+</p>
 
----
+<hr>
 
 </details>
 
@@ -138,14 +139,15 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
 <details> 
     <summary><i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
 
----
+<hr>
 
-Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:
+<p>Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:</p>
 
-```python
+<pre><code>
 def max_subsequence_sum(seq):
     return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
-```
+</code></pre>
+
 
 ... and the same thing with proper linebreaks, comments, and variable names!
 
