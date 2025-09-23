@@ -1,4 +1,8 @@
-# cs1010e_t05_2526
+---
+layout: default
+title CS1010E T05
+---
+# AY25/26 CS1010E T05
 
 A temporary repository to host writeups for NUS's CS1010E tutorial group T05
 

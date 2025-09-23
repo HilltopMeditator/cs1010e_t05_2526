@@ -1,3 +1,7 @@
+---
+layout: default
+title: T05 Recursion Writeups
+---
 # Question solutions
 
 ## Tribonacci
