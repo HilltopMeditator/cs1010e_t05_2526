@@ -4,10 +4,13 @@ title: W06 - Recursion Question solutions
 ---
 # W06 - Recursion Question solutions
 
+* TOC
+{:toc}
+
 ## Tribonacci
 
 Straightforward and simple:\
-Practical tip: clarify with the examiner about what constitutes a Base Case when the question phrasing is unclear.
+(Practical tip: clarify with the examiner about what constitutes a Base Case when the question phrasing is unclear.)
 
 ```python
 def tribonacci(n):
@@ -74,8 +77,11 @@ def get_nums_from_string(s):
 
 ### Black Magic
 
-<details> <summary> <i>There's a very clean alternate solution here....</i></summary>
-<hr>
+<details> 
+    <summary><i>There's a very clean alternate solution here....</i></summary>
+
+---
+
 As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.
 
 ```python
@@ -90,9 +96,12 @@ def get_nums_from_string(s):
     return output
 ```
 
-Notice also how it is completely readable (English-interpretable) despite being written fully in Python!\
+Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
+
 (barring the comment regarding under-the hood ASCII stuff)
-<hr>
+
+---
+
 </details>
 
 ## subtaskD (Maximum subsequence sum)
@@ -126,8 +135,11 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
 
 ### Dark arts
 
-<details> <summary> <i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
-<hr>
+<details> 
+    <summary><i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
+
+---
+
 Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:
 
 ```python
@@ -151,7 +163,8 @@ def max_subsequence_sum(seq):
     )
 ```
 
-<hr>
+---
+
 </details>
 
 ## Reimplementing tuple slicing
