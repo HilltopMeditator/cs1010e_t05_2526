@@ -79,28 +79,28 @@ def get_nums_from_string(s):
 
 <details markdown="1"> 
     <summary><i>There's a very clean alternate solution here....</i></summary>
-<div class="details-box">
+    <div class="details-box">
 
-<p>As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.</p>
+    <p>As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.</p>
 
-```python
-def get_nums_from_string(s):
+    ```python
+    def get_nums_from_string(s):
 
-    def isNumber(character):
-        ## Refers to the ASCII table: 
-        ## Checks if a character is between 0 to 9 (inclusive)
-        return ord('0') <= ord(character) <= ord('9') 
+        def isNumber(character):
+            ## Refers to the ASCII table: 
+            ## Checks if a character is between 0 to 9 (inclusive)
+            return ord('0') <= ord(character) <= ord('9') 
 
-    output = tuple(filter(isNumber, s))
-    return output
-```
+        output = tuple(filter(isNumber, s))
+        return output
+    ```
 
-<p>Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
-<br>
-(barring the comment regarding under-the hood ASCII stuff)
-</p>
+    <p>Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
+    <br>
+    (barring the comment regarding under-the hood ASCII stuff)
+    </p>
 
-</div>
+    </div>
 </details>
 
 ## subtaskD (Maximum subsequence sum)
@@ -136,33 +136,33 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
 
 <details markdown="1"> 
     <summary><i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
-<div class="details-box">
+    <div class="details-box">
 
-<p>Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:</p>
+    Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:
 
-```python
- max_subsequence_sum(seq):
-    return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
-```
+    ```python
+    max_subsequence_sum(seq):
+        return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
+    ```
 
-<p>
-... and the same thing with proper linebreaks, comments, and variable names!
-</p>
-```python
-def max_subsequence_sum(seq):
-    return max( ## Return max of...
-        map( ## ...sums of subsequences...
-            lambda subseq: sum(subseq),
-            (
-                seq[start:stop] ## ...for every possible [start:stop] pair.
-                for start in range(len(seq))
-                for stop in range(start+1, len(seq)+1)
-            )   # ^ Note that range() is half-open-bounds, ie: [start,stop)
+    <p>
+    ... and the same thing with proper linebreaks, comments, and variable names!
+    </p>
+    ```python
+    def max_subsequence_sum(seq):
+        return max( ## Return max of...
+            map( ## ...sums of subsequences...
+                lambda subseq: sum(subseq),
+                (
+                    seq[start:stop] ## ...for every possible [start:stop] pair.
+                    for start in range(len(seq))
+                    for stop in range(start+1, len(seq)+1)
+                )   # ^ Note that range() is half-open-bounds, ie: [start,stop)
+            )
         )
-    )
-```
+    ```
 
-</div>
+    </div>
 </details>
 
 ## Reimplementing tuple slicing
