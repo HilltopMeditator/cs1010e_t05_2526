@@ -3,8 +3,6 @@ description: Writeups for NUS's CS1010E tutorial group T05
 theme: minima
 
 theme: minima   # or whichever theme you’re using
-plugins:
-  - jekyll-feed
 
 # Add this line to include your stylesheet
 include:
