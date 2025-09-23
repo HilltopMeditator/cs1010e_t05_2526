@@ -25,3 +25,25 @@ h2 {
 h3 {
   border-bottom: 1px solid #888;
 }
+
+details {
+  margin: 1em 0;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+}
+
+details[open] .details-box {
+  background-color: #eef; /* subtle highlight when expanded */
+}
+
+.details-box {
+  padding: 1em;
+  margin-top: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}

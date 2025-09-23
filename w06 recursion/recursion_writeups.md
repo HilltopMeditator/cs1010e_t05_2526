@@ -77,14 +77,13 @@ def get_nums_from_string(s):
 
 ### Black Magic
 
-<details> 
+<details markdown="1"> 
     <summary><i>There's a very clean alternate solution here....</i></summary>
-
-<hr>
+<div class="details-box">
 
 <p>As I was doing the writeup, I stumbled upon this solution. This solution is too good not to show, and it really showcases the power of expressions.</p>
 
-<pre><code class="language-python">
+```python
 def get_nums_from_string(s):
 
     def isNumber(character):
@@ -94,15 +93,14 @@ def get_nums_from_string(s):
 
     output = tuple(filter(isNumber, s))
     return output
-</code></pre>
+```
 
 <p>Notice also how it is completely readable (English-interpretable) despite being written fully in Python!
 <br>
 (barring the comment regarding under-the hood ASCII stuff)
 </p>
 
-<hr>
-
+</div>
 </details>
 
 ## subtaskD (Maximum subsequence sum)
@@ -136,21 +134,22 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
 
 ### Dark arts
 
-<details> 
+<details markdown="1"> 
     <summary><i>— and why you should use one-liners sparingly (and comment rigourously)</i></summary>
-
-<hr>
+<div class="details-box">
 
 <p>Just to illustrate how quickly code can become unreadable with "common-sense" and jazz, here is a pure for-loop version of the solution:</p>
 
-<pre><code class="language-python">def max_subsequence_sum(seq):
+```python
+ max_subsequence_sum(seq):
     return max(map(lambda x: sum(x), (seq[i: j] for i in range(len(seq)) for j in range(i, len(seq)+1))))
-</code></pre>
+```
 
 <p>
 ... and the same thing with proper linebreaks, comments, and variable names!
 </p>
-<pre><code class="language-python">def max_subsequence_sum(seq):
+```python
+def max_subsequence_sum(seq):
     return max( ## Return max of...
         map( ## ...sums of subsequences...
             lambda subseq: sum(subseq),
@@ -161,10 +160,9 @@ though I would get multiple headaches and a severe temptation to deduct marks (m
             )   # ^ Note that range() is half-open-bounds, ie: [start,stop)
         )
     )
-</code></pre>
+```
 
-<hr>
-
+</div>
 </details>
 
 ## Reimplementing tuple slicing
