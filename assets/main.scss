@@ -37,7 +37,7 @@ details summary {
 }
 
 details[open] .details-box {
-  background-color: rgb(214, 214, 214); /* subtle highlight when expanded */
+  background-color: #FEF; /* subtle highlight when expanded */
 }
 
 .details-box {
@@ -45,5 +45,5 @@ details[open] .details-box {
   margin-top: 0.5em;
   border: 1px solid #ccc;
   border-radius: 6px;
-  background-color: rgb(214, 214, 214);
+  background-color: #FEF;
 }
