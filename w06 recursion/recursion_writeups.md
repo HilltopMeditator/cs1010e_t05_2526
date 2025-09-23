@@ -202,15 +202,15 @@ Starting with this...
 
 ...rephrase this to...
 
-> For each permutation, take out an element:\
-... then take out another element\
-... then take out another element\
+> For each permutation, take out an element:<br>
+... then take out another element<br>
+... then take out another element<br>
 ... (repeated until n times)
 
 See a recursive part yet? I'll make it clearer:
 
-> For each permutation, take out an element:\
-... then take out another element...\
+> For each permutation, take out an element:<br>
+... then take out another element...<br>
 (From this point on, each possible way to take out _n-1_ elements is itself a permutation.)
 
 </div>
