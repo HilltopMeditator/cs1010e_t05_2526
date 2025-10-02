@@ -97,7 +97,7 @@ def weighted_dice(n,w_fx):
 
 ## Hard
 
-Given such a dice from question 2, we are asked to simulate a dice roll using `random()` from the package `random`. The function `random()` generates a random float uniformly in the half-open range (0.0 <= X <1.0).
+**Question: Given such a dice from question 2, we are asked to simulate a dice roll using `random()` from the package `random`. The function `random()` generates a random float uniformly in the half-open range (0.0 <= X <1.0).**
 
 The difficulty in this question lies in figuring out how to map from a random variable given by `random()` to the dice-face representing the result.
 
