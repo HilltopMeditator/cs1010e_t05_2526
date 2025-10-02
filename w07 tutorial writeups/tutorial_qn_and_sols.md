@@ -9,7 +9,7 @@ title: W07 - List Comprehensions
 
 For this week's exercise, the theme is oriented around list comprehensions. However, we will also roughly touch on ideas of acquiring and inferring information/data that is not explicitly stated.
 
-Do note that list-comprehensions are very technically, considered a iterable<sup>1</sup>, and are declared as such:
+Do note that List Comprehensions are considered a iterable<sup>1</sup>, and are declared as such:
 
 ```python
 List_Comp = (expression for var in iterable (if condition))
@@ -18,7 +18,7 @@ List_Comp = (expression for var in iterable (if condition))
 
 ---
 
-1. More precisely, List Comprehensions more generally called Generator Expressions, but the distinction shouldn't matter for this course
+1. More precisely, List Comprehensions fall under a class of expressions called Generator Expressions, but the distinction shouldn't matter too much for this course
 
 ## Easy
 
