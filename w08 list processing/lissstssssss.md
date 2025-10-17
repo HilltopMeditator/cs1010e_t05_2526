@@ -24,7 +24,7 @@ The keen-eye amongst you will then have noticed something about the typical prog
 ![course syllabus](image-1.png)\
 _image taken from Canvas > CS1010E > Modules > Course synopsis > Lesson Plan_
 
-Considering that most logic can be expressed as either checking/adding items in/to a collection, it is extremely weird to delay teaching such a convenient way of organizing data, _the list_, until such a late timing. So, why do we move it back so much?<sup>1</sup>
+Considering that most logic can be expressed as either checking/adding items in/to a collection, it is extremely weird to delay teaching such a convenient way of organizing data, _the list_, until such a late timing. So, why do we move it back so much?
 
 To be entirely honest, I don't fully understand the rationale too :P. But here is my blind shot at this: One caveat about lists is that it is extremely volatile by its nature of convenient modification, so read/write access to it have to be safeguarded very very carefully.
 
@@ -67,7 +67,7 @@ c0 = [0]
 c = [c] * 3
 ```
 
-...will NOT have 2 zeros ("0") after modifying one of them?\
+...will NOT have 2 zeros ("0") after modifying one of them?<br>
 i.e.: after running `a[0] = 1`, `b[0] = 1`, and `c[0][0] = 1`
 
 <details>
@@ -80,9 +80,10 @@ i.e.: after running `a[0] = 1`, `b[0] = 1`, and `c[0][0] = 1`
 The reason for such obscure behaviour has to do with the Python Memory model:
 
 ![alt text](image-2.png)\
-_Disclaimer: The above diagram is oversimplified and is only done in accordance to my own practicality-oriented understanding, may not correspond 1-to-1 with Python's actual implementation. Do not use this as an actual technical reference_
+>_Disclaimer: The above diagram is oversimplified and is only done in accordance to my own practicality-oriented understanding, may not correspond 1-to-1 with Python's actual implementation. Do not use this as an actual technical reference_
 
-As you can see, all variables in python act like pointers to an address in the memory heap (You can actually see this address! use: `id(...)`). Hence when you initialize a list of lists, all nested lists will be stored in memory, and there'll be a "master-list" that contains addresses of all the lists (may be fun to think about this one... and do verify with the above quiz!). The unravelling and rendering logic is a bit finicky and requires a separate topic to deal with, but this is more than enough detail to properly solve problems using lists, let's move on.
+As you can see, all variables in python act like pointers to an address in the memory heap (You can actually see this address! use: `id(...)`).\
+When you initialize a list of lists, all nested lists will be stored in memory, and there'll be a "master-list" that contains addresses of all the lists (may be fun to think about this one... and do verify with the above quiz!). The unravelling and rendering logic is a bit finicky and requires a separate topic to deal with, but this is more than enough detail to properly solve problems using lists, let's move on.
 
 ## Questions
 
