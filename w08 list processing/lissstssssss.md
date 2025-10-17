@@ -83,7 +83,7 @@ The reason for such obscure behaviour has to do with the Python's memory model:
 
 >_Disclaimer: The above diagram is oversimplified and is only done in accordance to my own practicality-oriented understanding, may not correspond 1-to-1 with Python's actual implementation. Do not use this as an actual technical reference_
 
-As you can see, all variables in python act like pointers to an address in the memory heap (You can actually see this address! use: `id(...)`).\
+As you can see, all variables in python act like pointers to an address in the memory heap.\ (You can actually see this address! use: `id(...)`).
 When you initialize a list of lists, all nested lists will be stored in memory, and there'll be a "master-list" that contains addresses of all the lists (may be fun to think about this one... and do verify with the above quiz!). The unravelling and rendering logic is a bit finicky and requires a separate topic to deal with, but this is more than enough detail to properly solve problems using lists, let's move on.
 
 ## Questions
