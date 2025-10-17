@@ -77,7 +77,7 @@ i.e.: after running `a[0] = 1`, `b[0] = 1`, and `c[0][0] = 1`
 </div>
 </details>
 
-The reason for such obscure behaviour has to do with the Python Memory model:
+The reason for such obscure behaviour has to do with the Python's memory model:
 
 ![Memory model](image.png)
 
