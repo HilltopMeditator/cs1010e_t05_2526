@@ -9,13 +9,16 @@
   <body>
     <header class="site-header">
       <div class="wrapper">
-        <nav>
-          <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
-        </nav>
         <h1 class="page-title">{{ page.title | default: site.title }}</h1>
+
+        {% unless page.url == '/' %}
+          <nav>
+            <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
+          </nav>
+        {% endunless %}
       </div>
     </header>
-    
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
