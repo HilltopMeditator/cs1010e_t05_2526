@@ -66,6 +66,7 @@ details[open] .details-box {
 
 .header-right {
   flex: 1;
+  justify-content: end;
 }
 
 /* Page title */
@@ -82,7 +83,6 @@ details[open] .details-box {
   text-decoration: none;
   font-weight: bold;
   transition: text-decoration 0.2s ease;
-  text-align: right;
 }
 
 .home-link:hover {
