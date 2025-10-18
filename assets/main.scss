@@ -48,7 +48,6 @@ details[open] .details-box {
 
 .site-header {
   background: #f5f5f5;
-  margin-top: 3rem;
   border-bottom: 1px solid #ddd;
 }
 
@@ -57,7 +56,10 @@ details[open] .details-box {
   justify-content: space-between;
   /* left/right layout */
   align-items: center;
+  flex-wrap: nowrap;
+  /* keeps them on one line */
   width: 100%;
+  margin-top: 3rem;
 }
 
 .site-header .wrapper div {
@@ -66,11 +68,11 @@ details[open] .details-box {
 }
 
 .header-left {
-  width: 80%;
+  width: 75%;
 }
 
 .header-right {
-  width: 20%;
+  width: auto;
 }
 
 /* title styling */
