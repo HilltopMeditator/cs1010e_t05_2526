@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   </head>
   <body>
-    <header class="site-header">
-      <h1 class="page-title">{{ page.title | default: site.title }}</h1>
-
-      {% unless page.url == '/' %}
-        <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
-      {% endunless %}
-    </header>
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+        
+        <div class="site-header">
+          <h1 class="page-title">{{ page.title | default: site.title }}</h1>
+
+          {% unless page.url == '/' %}
+            <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
+          {% endunless %}
+        </div>
+
         {{ content }}
       </div>
     </main>
