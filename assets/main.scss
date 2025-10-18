@@ -46,57 +46,42 @@ details[open] .details-box {
   background-color: #ffEEff;
 }
 
+/* Header styling */
 .site-header {
-  background: #f5f5f5;
-  border-bottom: 1px solid #ddd;
-}
-
-.site-header .wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-content: flex-end;
-  width: 100%;
-  padding: 0 14px;
+  align-items: center;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
 }
 
-.header-left {
-  flex-grow: 3;
-}
-
-.header-right {
-  width: auto;
-}
-
-/* title styling */
+/* Page title */
 .page-title {
-  margin: 2rem 0;
+  margin: 0;
   font-size: 1.5rem;
   color: #333;
-  display: inline;
+  white-space: nowrap;
 }
 
-/* home link styling */
+/* Home link */
 .home-link {
+  color: black;
   text-decoration: none;
-  background-color: black;
-  color: whitesmoke;
-  /* force text to stay black */
   font-weight: bold;
   transition: text-decoration 0.2s ease;
-  padding: 10%;
 }
 
-.home-link:active,
 .home-link:hover {
   text-decoration: underline;
 }
 
-/* prevent link color from changing after click */
-.home-link:link,
 .home-link:visited,
-.home-link:active,
-.home-link:hover {
-  background-color: black;
-  color: whitesmoke;
+.home-link:active {
+  color: black;
+}
+
+/* Main content area */
+.page-content {
+  padding: 2rem 5%;
 }
