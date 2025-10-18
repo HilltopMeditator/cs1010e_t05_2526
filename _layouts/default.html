@@ -1,27 +1,30 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  </head>
-  <body>
-    <div class="wrapper"></div>
-      <main class="page-content" aria-label="Content">
-      
-        
-        <div class="site-header">
-          <h1 class="page-title">{{ page.title | default: site.title }}</h1>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-          {% unless page.url == '/' %}
-            <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
-          {% endunless %}
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ " /assets/main.css" | relative_url }}">
+</head>
 
-        {{ content }}
-      
-      </main>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+
+      {% unless page.url == '/' %}
+      <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
+      {% endunless %}
+
+      <h1 class="page-title">{{ page.title | default: site.title }}</h1>
     </div>
-  </body>
+  </header>
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+</body>
+
 </html>
