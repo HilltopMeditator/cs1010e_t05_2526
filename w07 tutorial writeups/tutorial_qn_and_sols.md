@@ -2,7 +2,6 @@
 layout: default
 title: W07 - List Comprehensions
 ---
-# W07 - List Comprehensions
 
 * TOC
 {:toc}

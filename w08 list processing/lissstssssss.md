@@ -2,7 +2,6 @@
 layout: default
 title: W08 - List Processing
 ---
-# W08 - List Processing
 
 * TOC
 {:toc}

@@ -1,7 +1,4 @@
----
----
-
-@import "minima";  
+--- --- @import "minima";
 
 /* Your overrides below */
 img {
@@ -37,7 +34,8 @@ details summary {
 }
 
 details[open] .details-box {
-  background-color: #ffEEff; /* subtle highlight when expanded */
+  background-color: #ffEEff;
+  /* subtle highlight when expanded */
 }
 
 .details-box {
@@ -46,4 +44,17 @@ details[open] .details-box {
   border: 1px solid #ccc;
   border-radius: 6px;
   background-color: #ffEEff;
+}
+
+.site-header .home-link {
+  text-decoration: none;
+  color: #007acc;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  transition: text-decoration 0.2s ease;
+}
+
+/* 👇 This adds the underline on hover */
+.site-header .home-link:hover {
+  text-decoration: underline;
 }
