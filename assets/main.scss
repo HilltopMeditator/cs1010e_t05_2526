@@ -53,10 +53,27 @@ details[open] .details-box {
 }
 
 .site-header .wrapper {
+  padding: 10%;
   display: flex;
   justify-content: space-between;
-  /* puts title on left, Home on right */
+  /* keeps title left, Home right */
   align-items: center;
+  /* vertically aligns them */
+  flex-wrap: nowrap;
+  /* keeps them on one line */
+}
+
+.page-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  white-space: nowrap;
+  /* prevent wrapping */
+}
+
+.site-header nav {
+  margin-left: auto;
+  /* pushes Home link to far right */
 }
 
 .site-header .home-link {
