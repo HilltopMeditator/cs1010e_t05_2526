@@ -56,6 +56,14 @@ details[open] .details-box {
   background: #f5f5f5;
 }
 
+.header-left {
+  flex: 3;
+}
+
+.header-right {
+  flex: 1;
+}
+
 /* Page title */
 .page-title {
   margin: 0;
