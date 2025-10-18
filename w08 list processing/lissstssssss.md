@@ -50,11 +50,10 @@ print(c)
 ```
 
 See how this breaks the assumption of tuples being "immutable"? I'll give you a try at explaining for why this is.
-</div>
 
-<details open>
+<details>
     <summary ><i><u>An quiz to try out (Please don't skip!)</u></i></summary>
-<div class="details-box" markdown="1">
+<div markdown="1">
 
 Which of the following lists `a`, `b`, or `c`...
 
@@ -71,11 +70,12 @@ i.e.: after running `a[0] = 1`, `b[0] = 1`, and `c[0][0] = 1`
 
 <details>
     <summary>Answer:</summary>
-    <code>c</code>, it'll be <code>[[1],[1],[1]]</code>
+    <code>c</code>. The result of <code>c[0][0] = 1</code> will be <code>[[1],[1],[1]]</code>
 </details>
 </div>
 </details>
 
+</div>
 The reason for such obscure behaviour has to do with the Python's memory model:
 
 ![Memory model](image.png)
