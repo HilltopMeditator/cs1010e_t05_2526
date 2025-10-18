@@ -1,8 +1,4 @@
----
-
----
-
-@import "minima";
+--- --- @import "minima";
 
 /* Your overrides below */
 img {
@@ -15,8 +11,10 @@ img {
 
 hr {
   height: 1px;
-  color: #4d4d4d;  /* old IE */
-  background-color: #4d4d4d;  /* Modern Browsers */
+  color: #4d4d4d;
+  /* old IE */
+  background-color: #4d4d4d;
+  /* Modern Browsers */
 }
 
 h2 {
@@ -82,6 +80,7 @@ details[open] .details-box {
   text-decoration: none;
   font-weight: bold;
   transition: text-decoration 0.2s ease;
+  text-align: right;
 }
 
 .home-link:hover {
