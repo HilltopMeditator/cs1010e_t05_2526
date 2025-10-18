@@ -53,34 +53,40 @@ details[open] .details-box {
 }
 
 .site-header .wrapper {
-  padding: 50%;
   display: flex;
-  justify-content: space-between;
-  /* keeps title left, Home right */
+  justify-content: space-between; /* left/right layout */
   align-items: center;
-  /* vertically aligns them */
-  flex-wrap: nowrap;
-  /* keeps them on one line */
+  width: 100%;
 }
 
+.header-left,
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* title styling */
 .page-title {
   margin: 0;
   font-size: 1.5rem;
   color: #333;
-  white-space: nowrap;
-  /* prevent wrapping */
 }
 
-.site-header .home-link {
+/* home link styling */
+.home-link {
   text-decoration: none;
-  color: #000000;
+  color: black; /* force text to stay black */
   font-weight: bold;
   transition: text-decoration 0.2s ease;
-  margin-left: auto;
-  /* pushes Home link to far right */
 }
 
-/* underline when hovered */
-.site-header .home-link:hover {
+/* hover underline */
+.home-link:hover {
   text-decoration: underline;
+}
+
+/* prevent link color from changing after click */
+.home-link:visited,
+.home-link:active {
+  color: black;
 }
