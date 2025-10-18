@@ -53,7 +53,7 @@ details[open] .details-box {
 }
 
 .site-header .wrapper {
-  padding: 10%;
+  padding: 50%;
   display: flex;
   justify-content: space-between;
   /* keeps title left, Home right */
@@ -71,19 +71,16 @@ details[open] .details-box {
   /* prevent wrapping */
 }
 
-.site-header nav {
-  margin-left: auto;
-  /* pushes Home link to far right */
-}
-
 .site-header .home-link {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
   transition: text-decoration 0.2s ease;
+  margin-left: auto;
+  /* pushes Home link to far right */
 }
 
-/* underline on hover */
+/* underline when hovered */
 .site-header .home-link:hover {
   text-decoration: underline;
 }
