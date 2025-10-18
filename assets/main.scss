@@ -79,19 +79,24 @@ details[open] .details-box {
 /* home link styling */
 .home-link {
   text-decoration: none;
-  color: black;
+  background-color: black;
+  color: whitesmoke;
   /* force text to stay black */
   font-weight: bold;
   transition: text-decoration 0.2s ease;
+  padding: 10%;
 }
 
-/* hover underline */
+.home-link:active,
 .home-link:hover {
   text-decoration: underline;
 }
 
 /* prevent link color from changing after click */
+.home-link:link,
 .home-link:visited,
-.home-link:active {
-  color: black;
+.home-link:active,
+.home-link:hover {
+  background-color: black;
+  color: whitesmoke;
 }
