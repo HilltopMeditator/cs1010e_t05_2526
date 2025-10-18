@@ -11,15 +11,15 @@
 <body>
   <header class="site-header">
     <div class="wrapper">
-      {% unless page.url == '/' %}
       <div class="header-left">
+        <h1 class="page-title">{{ page.title | default: site.title }}</h1>
+      </div>
+
+      {% unless page.url == '/' %}
+      <div class="header-right">
         <a href="{{ '/' | relative_url }}" class="home-link">Home</a>
       </div>
       {% endunless %}
-
-      <div class="header-right">
-        <h1 class="page-title">{{ page.title | default: site.title }}</h1>
-      </div>
     </div>
   </header>
 

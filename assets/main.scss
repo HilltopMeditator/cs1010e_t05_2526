@@ -1,4 +1,4 @@
---- --- @import "minima";
+@import "minima";
 
 /* Your overrides below */
 img {
@@ -34,7 +34,7 @@ details summary {
 }
 
 details[open] .details-box {
-  background-color: #ffEEff;
+  background-color: #ffF0ff;
   /* subtle highlight when expanded */
 }
 
@@ -43,7 +43,7 @@ details[open] .details-box {
   margin-top: 0.5em;
   border: 1px solid #ccc;
   border-radius: 6px;
-  background-color: #ffEEff;
+  background-color: #ffF0ff;
 }
 
 /* Header styling */
